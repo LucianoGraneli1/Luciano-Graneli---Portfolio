@@ -74,8 +74,11 @@ body {
 .upper img {
     margin-left: 100px;
     width: 250px;
-    height: auto;
+    height: 300px;
     margin-right: 400px;
+    object-fit: cover;
+    object-position: center top;
+   
 }
 
 .portfolio-titulo {
