@@ -357,6 +357,10 @@ footer {
     color: black;
 }
 
+.portfolio-titulo, .about-me-title, .skills .title, .contact .title {
+    font-size: clamp(24px, 5vw, 72px);
+}
+
 @media (max-width: 768px) {
     .skills-container {
         grid-template-columns: 1fr;
@@ -378,5 +382,60 @@ footer {
     }
     100% {
         transform: translateX(0);
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        background-color: black;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .navbar ul.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        font-size: 30px;
+        color: white;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-text {
+        padding-right: 0;
+    }
+
+    .about-image img {
+        width: 90%;
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    }
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+        margin: 0 auto;
     }
 }
